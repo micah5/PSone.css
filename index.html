@@ -4,20 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="NES.css is a NES-style CSS Framework." />
-    <meta name="keywords" content="html5,css,framework,sass,NES,8bit" />
-    <meta name="author" content="© 2018 B.C.Rikko" />
-    <link rel="shortcut icon" href="https://bcrikko.github.io/NES.css/favicon.ico" />
+    <meta name="description" content="PSone.css is a Playstation 1 style CSS Framework." />
+    <meta name="keywords" content="html5,css,framework,Playstation" />
+    <meta name="author" content="© 2018 Micah Price" />
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.css">
+    <link rel="stylesheet" type="text/css" href="PSone.css">
+    <style>
+      .play {
+        font-family:"Play";
+      }
+      .play > .logo {
+        height: 50px;
+        margin: 0 2rem 0 2rem;
+      }
+      @media only screen and (max-width: 600px) {
+        .play > .logo {
+          height: 50px;
+          margin-bottom: 40px;
+        }
+        .play {
+          margin-left: 1rem;
+        }
+      }
+    </style>
 
     <title>PSone.css</title>
   </head>
 
   <body>
-    <header>
+    <header style="position: relative;">
       <h1 class="play"><img class="logo" src="logo.png"></img>PSone.css</h1>
-      <p>Playstation 1 style CSS Framework, inspired by <a href="https://bcrikko.github.io/NES.css/">NES.css.</a></p>
+      <p>Playstation 1 style CSS Framework, inspired by <a href="https://bcrikko.github.io/NES.css/">NES.css</a>.</p>
+      <p style="position:absolute; right: 0; top: 0;"><a href="https://github.com/98mprice/PSone.css">Fork me!</a></p>
     </header>
 
     <section class="container with-title">

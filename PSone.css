@@ -1,6 +1,6 @@
 @font-face {
   font-family:"Final Fantasy Script Collection - Final Fantasy VII";
-  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.eot?") format("eot"),
+  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.eot") format("eot"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.woff") format("woff"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.ttf") format("truetype"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.svg#FinalFantasyVII") format("svg");
@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family:"Pixel Cyr Normal";
-  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.eot?") format("eot"),
+  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.eot") format("eot"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.woff") format("woff"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.ttf") format("truetype"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.svg#PixelCyr-Normal") format("svg");
@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family:"Play";
-  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.eot?") format("eot"),
+  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.eot") format("eot"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.woff") format("woff"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.ttf") format("truetype"),
       url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.svg#Play") format("svg");
@@ -33,22 +33,6 @@ body {
   font-smooth: never;
   -webkit-font-smoothing : none;
   line-height: 20px;
-}
-.play {
-  font-family:"Play";
-}
-.play > .logo {
-  height: 50px;
-  margin: 0 2rem 0 2rem;
-}
-@media only screen and (max-width: 600px) {
-  .play > .logo {
-    height: 50px;
-    margin-bottom: 40px;
-  }
-  .play {
-    margin-left: 1rem;
-  }
 }
 *:focus {
   outline: none;
