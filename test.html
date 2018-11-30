@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="NES.css is a NES-style CSS Framework." />
+    <meta name="keywords" content="html5,css,framework,sass,NES,8bit" />
+    <meta name="author" content="© 2018 B.C.Rikko" />
+    <link rel="shortcut icon" href="https://bcrikko.github.io/NES.css/favicon.ico" />
+
+    <style>
+    @font-face {
+      font-family:"Final Fantasy Script Collection - Final Fantasy VII";
+      src:url("Final_Fantasy_VII.eot?") format("eot"),
+          url("Final_Fantasy_VII.woff") format("woff"),
+          url("Final_Fantasy_VII.ttf") format("truetype"),
+          url("Final_Fantasy_VII.svg#FinalFantasyVII") format("svg");
+      font-weight:normal;
+      font-style:normal;
+    }
+    @font-face {
+      font-family:"Pixel Cyr Normal";
+      src:url("pixcyr2.eot?") format("eot"),
+          url("pixcyr2.woff") format("woff"),
+          url("pixcyr2.ttf") format("truetype"),
+          url("pixcyr2.svg#PixelCyr-Normal") format("svg");
+      font-weight:normal;
+      font-style:normal;
+    }
+    @font-face {
+      font-family:"Play";
+      src:url("Play-Regular.eot?") format("eot"),
+          url("Play-Regular.woff") format("woff"),
+          url("Play-Regular.ttf") format("truetype"),
+          url("Play-Regular.svg#Play") format("svg");
+      font-weight:normal;
+      font-style:normal;
+    }
+    body {
+      font-family:"Final Fantasy Script Collection - Final Fantasy VII";
+      font-size: 40px;
+      background-color: black;
+      color: white;
+      font-smooth: never;
+      -webkit-font-smoothing : none;
+      line-height: 20px;
+    }
+    .play {
+      font-family:"Play";
+    }
+    .play > .logo {
+      height: 50px;
+      margin: 0 2rem 0 2rem;
+    }
+    @media only screen and (max-width: 600px) {
+      .play > .logo {
+        height: 50px;
+        margin-bottom: 40px;
+      }
+      .play {
+        margin-left: 1rem;
+      }
+    }
+    *:focus {
+      outline: none;
+    }
+    .btn {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px black;
+      /* Lots of padding, rectangle, rounded corners */
+      padding: 0 4rem 0 4rem;
+      background: -webkit-linear-gradient(left, transparent, #AEAFAE, transparent);
+      border: 0px;
+      border-bottom: 3px solid;
+      border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+      border-image-slice: 1;
+      border-top: 3px solid;
+    }
+    .btn:hover {
+      background: -webkit-linear-gradient(left, transparent, lightgrey, transparent);
+    }
+    .btn.error {
+      background: -webkit-linear-gradient(left, transparent, #B62F28, transparent);
+    }
+    .btn.error:hover {
+      background: -webkit-linear-gradient(left, transparent, #E93F36, transparent);
+    }
+    .btn.warning {
+      background: -webkit-linear-gradient(left, transparent, #F19C42, transparent);
+    }
+    .btn.warning:hover {
+      background: -webkit-linear-gradient(left, transparent, #ffb544, transparent);
+    }
+    .btn.success {
+      background: -webkit-linear-gradient(left, transparent, #4EA35B, transparent);
+    }
+    .btn.success:hover {
+      background: -webkit-linear-gradient(left, transparent, #5dc66d, transparent);
+    }
+    .btn.primary {
+      background: -webkit-linear-gradient(left, transparent, #3E8CA5, transparent);
+    }
+    .btn.primary:hover {
+      background: -webkit-linear-gradient(left, transparent, #49a7c6, transparent);
+    }
+    .btn.alternative {
+      border-image: linear-gradient(to right, transparent , #E84437, #F4F251, transparent);
+      background: -webkit-linear-gradient(left, transparent, #79F372, transparent);
+    }
+    .btn.alternative:hover {
+      border-image: linear-gradient(to right, transparent , #6CB064, #DC4387, transparent);
+      background: -webkit-linear-gradient(left, transparent, #77F9FB, transparent);
+    }
+    .container:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    .container {
+      position: relative;
+      background-image: linear-gradient(#0D2289, #06093B);
+      border: 1px solid #c6c6c6;
+      border-radius: 8px;
+      box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .field {
+      margin: 0 1rem 0 1rem;
+      z-index: 2;
+    }
+    .field:last-child {
+      margin-bottom: 1rem;
+    }
+    .input {
+      border: 0px;
+      width: 100%;
+      padding-bottom: 0.5rem;
+      font-family:"Final Fantasy Script Collection - Final Fantasy VII";
+      font-size: 40px;
+      background-color: transparent;
+      background: linear-gradient(to right, white 0%, white 50%, transparent 50%, transparent 100%) repeat-x left bottom;
+      background-size: 30px 2px;
+      color: white;
+    }
+    ::placeholder {
+       color: #C6C843;
+    }
+    .container.dark {
+      background-image: none;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .container.light {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .container:before{
+      position:absolute;
+      display:border;
+      content:'';
+      border:2px solid white;
+      border-radius: 7px;
+      height:100%;
+      width:100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      z-index: 0;
+    }
+    .title {
+      text-transform: uppercase;
+      color: #AAA9AF;
+      -webkit-transform: scale(1, 0.5);
+      color: lightgrey;
+      text-shadow: 4px 4px black;
+      font-size: 50px;
+      line-height: 4px;
+      margin-left: 10px;
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    p {
+      padding: 0rem 1rem 1rem 1rem;
+      margin: 0;
+      line-height: 80%;
+      text-shadow: 2px 2px black;
+    }
+    .progress {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 3px;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .progress > .box {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+      top: 50%;
+      left: 4%;
+      width: 45px; height: 12px;
+    }
+    .progress > .subtitle {
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      font-family:"Pixel Cyr Normal";
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 20px;
+      font-size: 20px;
+      color: white;
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 20px;
+      -webkit-transform: scale(1.6, 0.8);
+    }
+    .progress > .bar {
+      background-image: linear-gradient(to right, #2C6776, #4EA35B);
+      height: 12px;
+    }
+    .progress.primary > .bar {
+      background-image: linear-gradient(to right, #3E8CA5, #49a7c6);
+      height: 12px;
+    }
+    .progress.success > .bar {
+      background-image: linear-gradient(to right, #4EA35B, #5dc66d);
+      height: 12px;
+    }
+    .progress.warning > .bar {
+      background-image: linear-gradient(to right, #F19C42, #ffb544);
+      height: 12px;
+    }
+    .progress.error > .bar {
+      background-image: linear-gradient(to right, #B62F28, #E93F36);
+      height: 12px;
+    }
+    .progress.error > .bar {
+      background-image: linear-gradient(to right, #B62F28, #E93F36);
+      height: 12px;
+    }
+    @media only screen and (min-width: 600px) {
+      body {
+        margin: 0 10rem 0 10rem;
+      }
+    }
+    a {
+      color: yellow;
+      text-decoration: none;
+    }
+    .icon {
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
+    .icon.ddr1 {
+      background-image: url('data:image/gif;base64,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')
+    }
+    .icon.ddr2 {
+      background-image: url('data:image/gif;base64,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')
+    }
+    .icon.ddr3 {
+      background-image: url('data:image/gif;base64,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')
+    }
+    .radio {
+      z-index: 5;
+    }
+    /* HIDE RADIO */
+    [type=radio] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* IMAGE STYLES */
+    [type=radio] + .option {
+      cursor: pointer;
+    }
+
+    /* CHECKED STYLES */
+    [type=radio]:checked + .option > .click {
+      visibility: visible;
+    }
+    .option {
+      text-transform: uppercase;
+      font-family:"Pixel Cyr Normal";
+      text-shadow: 4px 4px black;
+      font-size: 20px;
+      position: relative;
+      padding: 1rem;
+    }
+    .click {
+      background: url('cursor.png');
+      background-repeat: no-repeat;
+      background-size: 30px;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      transform: translate(-20px, 25px);
+      visibility:hidden
+    }
+    </style>
+
+    <title>PSone.css</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="play"><img class="logo" src="logo.png"></img>PSone.css</h1>
+      <p>Playstation 1 style CSS Framework, inspired by <a href="https://bcrikko.github.io/NES.css/">NES.css.</a></p>
+    </header>
+
+    <section class="container with-title">
+      <h2 class="title">Buttons</h2>
+      <div style="margin: 1rem;">
+        <button type="button" class="btn">Normal</button>
+        <button type="button" class="btn primary">Primary</button>
+        <button type="button" class="btn success">Success</button>
+        <button type="button" class="btn warning">Warning</button>
+        <button type="button" class="btn error">Error</button>
+      </div>
+    </section>
+
+    <section class="container with-title">
+      <h2 class="title">Containers</h2>
+      <div class="containers">
+        <div class="container">
+          <label class="title">Default</label>
+          <p>Kick! Punch! It's all in the mind.</p>
+        </div>
+        <div class="container dark">
+          <label class="title">dark</label>
+          <p>You see, the island is the site of a secret nuclear
+           weapons disposal facility.</p>
+        </div>
+        <div class="container light">
+          <label class="title">light</label>
+          <p>Crash, Crash? Are you there Crash? ... Are you there Crash?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container with-title">
+      <h2 class="title">Progress bars</h2>
+      <div style="margin: 1rem;">
+        <div class="progress">
+          <div class="bar" style="width: 80%"></div>
+          <div class="subtitle">Deafult</div>
+        </div>
+        <div class="progress primary">
+          <div class="bar" style="width: 100%"></div>
+          <div class="subtitle">primary</div>
+        </div>
+        <div class="progress success">
+          <div class="bar" style="width: 40%"></div>
+          <div class="subtitle">success</div>
+        </div>
+        <div class="progress warning">
+          <div class="bar" style="width: 60%"></div>
+          <div class="subtitle">warning</div>
+        </div>
+        <div class="progress error">
+          <div class="bar" style="width: 20%"></div>
+          <div class="subtitle">error</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container with-title">
+      <h2 class="title">Radios</h2>
+      <div style="margin: 1rem;" class="radio">
+        <label>
+          <input type="radio" name="test" value="small" checked>
+          <span class="option">Yes
+            <span class="click"></span>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="test" value="big">
+          <span class="option">No
+            <span class="click"></span>
+          </span>
+        </label>
+      </div>
+    </section>
+
+    <section class="form container with-title">
+      <h2 class="title">Forms</h2>
+      <div class="field">
+        <label>Default</label>
+        <input type="text" class="input">
+      </div>
+      <div class="field is-inline">
+        <label>With placeholder</label>
+        <input type="text" class="input" placeholder="Jill Valentine">
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="title">Icons</h2>
+      <section class="container">
+        <h3 class="title">Dance Dance Revolution</h3>
+        <div style="margin: 1rem;">
+          <i class="icon ddr1"></i>
+          <i class="icon ddr2"></i>
+          <i class="icon ddr3"></i>
+        </div>
+      </section>
+    </section>
+
+
+    <footer class="footer">
+      <p>
+        Made with ♥ by <a href="https://github.com/98mprice">98mprice</a>, <a href="https://www.reddit.com/user/oppai_suika/">oppai_suika</a>.
+        Special thanks to <a href="https://twitter.com/bc_rikko">bc_rikko</a>.
+      </p>
+    </footer>
+  </body>
+</html>
