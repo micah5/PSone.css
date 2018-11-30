@@ -1,27 +1,27 @@
 @font-face {
   font-family:"Final Fantasy Script Collection - Final Fantasy VII";
-  src:url("Final_Fantasy_VII.eot?") format("eot"),
-      url("Final_Fantasy_VII.woff") format("woff"),
-      url("Final_Fantasy_VII.ttf") format("truetype"),
-      url("Final_Fantasy_VII.svg#FinalFantasyVII") format("svg");
+  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.eot?") format("eot"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.woff") format("woff"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.ttf") format("truetype"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Final_Fantasy_VII.svg#FinalFantasyVII") format("svg");
   font-weight:normal;
   font-style:normal;
 }
 @font-face {
   font-family:"Pixel Cyr Normal";
-  src:url("pixcyr2.eot?") format("eot"),
-      url("pixcyr2.woff") format("woff"),
-      url("pixcyr2.ttf") format("truetype"),
-      url("pixcyr2.svg#PixelCyr-Normal") format("svg");
+  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.eot?") format("eot"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.woff") format("woff"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.ttf") format("truetype"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/pixcyr2.svg#PixelCyr-Normal") format("svg");
   font-weight:normal;
   font-style:normal;
 }
 @font-face {
   font-family:"Play";
-  src:url("Play-Regular.eot?") format("eot"),
-      url("Play-Regular.woff") format("woff"),
-      url("Play-Regular.ttf") format("truetype"),
-      url("Play-Regular.svg#Play") format("svg");
+  src:url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.eot?") format("eot"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.woff") format("woff"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.ttf") format("truetype"),
+      url("https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/fonts/Play-Regular.svg#Play") format("svg");
   font-weight:normal;
   font-style:normal;
 }
