@@ -1,4 +1,4 @@
-# PSone.css 🎮
+# PSone.css
 ![description](https://i.imgur.com/IctX9D2.png "description")
 
 Please feel free to submit a pull request, no matter how small. I love getting them.
