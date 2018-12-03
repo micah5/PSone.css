@@ -38,6 +38,7 @@ body {
   outline: none;
 }
 .btn {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   text-transform: uppercase;
