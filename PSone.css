@@ -215,6 +215,35 @@ p {
   background-image: linear-gradient(to right, #B62F28, #E93F36);
   height: 12px;
 }
+.progress.error > .bar {
+  background-image: linear-gradient(to right, #B62F28, #E93F36);
+  height: 12px;
+}
+.progress.indeterminate > .bar {
+  position: absolute;
+  background-image: linear-gradient(to right, #2C6776, #4EA35B);
+  width: 0%;
+  height: 12px;
+  left: 0%;
+  top: 0px;
+  animation: indeterminate 1.200s ease infinite;
+}
+
+@keyframes indeterminate {
+  0% {
+    width: 30%;
+    left: -.5%;
+  }
+  60% {
+    left: 40%;
+    width: 60%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   body {
     margin: 0 10rem 0 10rem;
