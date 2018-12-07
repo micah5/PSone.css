@@ -61,6 +61,10 @@ From MGS1
   <div class="bar" style="width: 20%"></div>
   <div class="subtitle">error</div>
 </div>
+<div class="progress indeterminate">
+  <div class="bar"></div>
+  <div class="subtitle">indeterminate</div>
+</div>
 ```
 
 ### Radio Button
