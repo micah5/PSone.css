@@ -123,7 +123,7 @@ body {
   color: white;
 }
 ::placeholder {
-   color: #C6C843;
+  color: #C6C843;
 }
 .container.dark {
   background-image: none;
@@ -169,6 +169,7 @@ p {
   padding: 3px;
   position: relative;
   margin-bottom: 1rem;
+  height: 12px;
 }
 .progress > .box {
   position: absolute;
@@ -225,7 +226,7 @@ p {
   width: 0%;
   height: 12px;
   left: 0%;
-  top: 0px;
+  top: 3px;
   animation: indeterminate 1.200s ease infinite;
 }
 
@@ -355,6 +356,121 @@ a {
 	border-width: 14px;
   margin-left: -14px;
 }
+.icon.square {
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.icon.square::before {
+  content: '';
+  position: absolute;
+  border: 4px solid #D592BD;
+  top: 9px;
+  bottom: 9px;
+  left: 9px;
+  right: 9px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.icon.circle {
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.icon.circle::before {
+  content: '';
+  position: absolute;
+  border: 4px solid #E94B0E;
+  border-radius: 50px;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.icon.x {
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.icon.x::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #9DA5D5;
+  top: 21.4px;
+  left: 5px;
+  right: 5px;
+  transform: rotate(45deg);
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.icon.x::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #9DA5D5;
+  top: 21.4px;
+  left: 5px;
+  right: 5px;
+  transform: rotate(135deg);
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.icon.triangle {
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.icon.triangle::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 0px;
+  left: 5px;
+  right: 5px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 19px;
+  border-left-width: 19px;
+  border-bottom: 30px solid #20AF93;
+}
+.icon.triangle::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  bottom: 0px;
+  left: 12px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 12px;
+  border-left-width: 12px;
+  border-bottom: 19px solid #47484A;
+}
+
 .radio {
   z-index: 5;
 }
