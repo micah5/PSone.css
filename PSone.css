@@ -25,6 +25,16 @@
   font-weight:normal;
   font-style:normal;
 }
+@font-face {
+  font-family: 'RationalTWDisplay';
+  src:url('./fonts/RationalTWDisplay.eot');
+  src:url('./fonts/RationalTWDisplay.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/RationalTWDisplay.woff2') format('woff2'),
+      url('./fonts/RationalTWDisplay.woff') format('woff'),
+      url('./fonts/RationalTWDisplay.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
 body {
   font-family:"Final Fantasy Script Collection - Final Fantasy VII";
   font-size: 40px;
@@ -473,7 +483,61 @@ a {
   border-left-width: 12px;
   border-bottom: 19px solid #47484A;
 }
-
+.icon.l3, .icon.r3 {
+  font-family: 'RationalTWDisplay';
+  font-style: normal;
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  height: 50px;
+  width: 50px;
+  margin: 6px 0 0 6px;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.icon.l3::before, .icon.r3::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #29292a;
+  border-radius: 50px;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.icon.l3::after {
+  font-size: .45em;
+  content: 'L3';
+  position: absolute;
+  border-left: 4.5px solid #fefefe;
+  border-radius: 50px;
+  top: 7px;
+  bottom: 7px;
+  left: 7px;
+  padding: .9em 0 0 .6em;
+  right: 0px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  clear: both;
+}
+.icon.r3::after {
+  font-size: .45em;
+  content: 'R3';
+  position: absolute;
+  border-left: 4.5px solid #fefefe;
+  border-radius: 50px;
+  top: 7px;
+  bottom: 7px;
+  left: 7px;
+  padding: .9em 0 0 .6em;
+  right: 0px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  clear: both;
+}
 .radio {
   z-index: 5;
 }
