@@ -123,7 +123,7 @@ body {
   color: white;
 }
 ::placeholder {
-   color: #C6C843;
+  color: #C6C843;
 }
 .container.dark {
   background-image: none;
@@ -275,6 +275,86 @@ a {
 }
 .icon.clickable:active {
   box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.icon.arrow-left, .icon.arrow-up, .icon.arrow-down, .icon.arrow-right {
+  background: #3f4044;
+  position: relative;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+  width: 28px;
+}
+.icon.arrow-left {
+  margin-left: 16px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.icon.arrow-right {
+  margin-right: 16px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.icon.arrow-up {
+  margin-top: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.icon.arrow-down {
+  margin-bottom: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.icon.arrow-left:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #3f4044;
+	border-width: 16px;
+	margin-top: -16px;
+}
+.icon.arrow-right:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #3f4044;
+	border-width: 16px;
+	margin-top: -16px;
+}
+.icon.arrow-up:after {
+	bottom: 100%;
+  left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #3f4044;
+	border-width: 14px;
+  margin-left: -14px;
+}
+.icon.arrow-down:after {
+	top: 100%;
+  left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #3f4044;
+	border-width: 14px;
+  margin-left: -14px;
 }
 .icon.square {
   border-radius: 50px;
