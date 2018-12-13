@@ -13,17 +13,98 @@
       .play {
         font-family:"Play";
       }
-      .play > .logo {
-        height: 50px;
+      .logo {
         margin: 0 2rem 0 2rem;
+        height: 50px;
       }
-      @media only screen and (max-width: 600px) {
+      .fork-me {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      @media only screen and (max-width: 768px) {
         .play > .logo {
           height: 50px;
           margin-bottom: 40px;
         }
         .play {
           margin-left: 1rem;
+        }
+        .container {
+          width: 90%;
+        }
+        .buttons {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+        }
+        .containers {
+          width: calc(100% - .5em);
+        }
+        .title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          box-sizing: border-box;
+          width: 260px;
+          height: 24px;
+          font-size: 50px;
+          line-height: 0px;
+        }
+        .progress:not(:first-child) {
+          margin-top: 35px;
+        }
+        .progress:first-child {
+          margin-top: 10px;
+        }
+        .controller-buttons {
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+        .progress > .subtitle {
+          position: absolute;
+          top: .44em;
+          left: 20%;
+          display: block;
+        }
+        h1 {
+          font-size: 1.7em;
+        }
+        .footer {
+          text-align: center;
+        }
+        .logo {
+          margin-top: .5em;
+        }
+        .fork-me {
+          top: .5em;
+        }
+        .input {
+          width: 90%;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        .progress > .subtitle {
+          position: absolute;
+          top: .44em;
+          left: 15%;
+          display: block;
+        }
+        .controller-buttons {
+          margin: 1rem;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+      }
+      @media only screen and (min-width: 320px)  and (max-width: 321px) {
+        body {
+          width: calc(100% + .5em)
+        }
+        h1 {
+          font-size: 1.7em;
         }
       }
     </style>
@@ -33,18 +114,21 @@
 
   <body>
     <header style="position: relative;">
-      <h1 class="play"><img class="logo" src="logo.png"></img>PSone.css</h1>
-      <p>Playstation 1 style CSS Framework, inspired by <a href="https://nostalgic-css.github.io/NES.css/">NES.css</a>.</p>
-      <p style="position:absolute; right: 0; top: 0;"><a href="https://github.com/98mprice/PSone.css">Fork me!</a></p>
+      <div style="display:flex;align-items:center;flex-flow:row wrap;">
+        <img class="logo" src="logo.png"></img>
+        <h1 class="play">PSone.css</h1>
+      </div>
+      <p>Playstation 1 style CSS Framework, inspired by <a href="https://bcrikko.github.io/NES.css/">NES.css</a>.</p>
+      <p class="fork-me"><a href="https://github.com/98mprice/PSone.css">Fork me!</a></p>
     </header>
 
     <section class="container with-title">
       <h2 class="title">Buttons</h2>
-      <div style="margin: 1rem;">
-        <button type="button" class="btn">Normal</button>
-        <button type="button" class="btn primary">Primary</button>
-        <button type="button" class="btn success">Success</button>
-        <button type="button" class="btn warning">Warning</button>
+      <div style="margin: 1rem;" class="buttons">
+        <button type="button" style="margin-bottom: .4em" class="btn">Normal</button>
+        <button type="button" style="margin-bottom: .4em" class="btn primary">Primary</button>
+        <button type="button" style="margin-bottom: .4em" class="btn success">Success</button>
+        <button type="button" style="margin-bottom: .4em" class="btn warning">Warning</button>
         <button type="button" class="btn error">Error</button>
       </div>
     </section>
@@ -70,7 +154,7 @@
 
     <section class="container">
       <h2 class="title">Progress bars</h2>
-      <div style="margin: 1rem;">
+      <div style="margin: 1rem;" class="progresses">
         <div class="progress">
           <div class="bar" style="width: 80%"></div>
           <div class="subtitle">Default</div>
@@ -100,7 +184,7 @@
 
     <section class="container">
       <h2 class="title">Radios</h2>
-      <div style="margin: 1rem;" class="radio">
+      <div style="margin: 1rem;margin-top: 0;" class="radio">
         <label>
           <input type="radio" name="test" value="small" checked>
           <span class="option">Yes
@@ -130,7 +214,7 @@
 
     <section class="container">
       <h2 class="title">Icons</h2>
-      <section class="container">
+      <section class="container" style="max-width:100%">
         <h3 class="title">Dance Dance Revolution</h3>
         <div style="margin: 1rem;">
           <i class="icon ddr1"></i>
@@ -138,7 +222,7 @@
           <i class="icon ddr3"></i>
         </div>
         <h3 class="title">Controller Buttons</h3>
-        <div style="margin: 1rem;display:flex;align-items:center;">
+        <div class="controller-buttons">
           <div style="margin-right:.1em">
             <i class="icon square clickable"></i>
           </div>
@@ -151,14 +235,14 @@
           <div style="margin-right:.4em;margin-left:.1em">
             <i class="icon x clickable"></i>
           </div>
-          <div style="margin-right:.2em;margin-left:.1em">
-            <i class="icon arrow-down"></i>
+          <div style="margin-right:.1em">
+            <i class="icon arrow-left"></i>
           </div>
           <div style="margin-right:.2em">
             <i class="icon arrow-right"></i>
           </div>
-          <div style="margin-right:.2em">
-            <i class="icon arrow-left"></i>
+          <div style="margin-right:.1em;margin-left:.1em">
+            <i class="icon arrow-down"></i>
           </div>
           <div style="margin-right:.4em">
             <i class="icon arrow-up"></i>
@@ -188,8 +272,8 @@
 
     <footer class="footer">
       <p>
-        Made with ♥ by <a href="https://github.com/98mprice">98mprice</a>, <a href="https://www.reddit.com/user/oppai_suika/">oppai_suika</a>.
-        Special thanks to <a href="https://twitter.com/bc_rikko">bc_rikko</a>, <a href="https://github.com/guastallaigor">guastallaigor</a>.
+        Made with ♥ by <a href="https://github.com/98mprice">98mprice</a>, <a href="https://github.com/guastallaigor">guastallaigor</a>.
+        Special thanks to <a href="https://twitter.com/bc_rikko">bc_rikko</a>.
       </p>
     </footer>
   </body>
