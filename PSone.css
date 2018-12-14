@@ -337,7 +337,7 @@ a {
   outline: 0;
   vertical-align: middle;
   user-select: none;
-  width: 28px;
+  width: 28.1px;
   box-shadow: 0px 2px 5px black;
 }
 .icon.arrow-left {
@@ -416,7 +416,7 @@ a {
 }
 .icon.square {
   border-radius: 50px;
-  padding: .2em;
+  padding: .201em;
   background-image: linear-gradient(#5f5e60, #3C3D3F);
   position: relative;
   will-change: box-shadow;
@@ -424,6 +424,7 @@ a {
   outline: 0;
   vertical-align: middle;
   user-select: none;
+  margin: 1.1px;
 }
 .icon.square::before {
   content: '';
@@ -437,7 +438,7 @@ a {
 }
 .icon.circle {
   border-radius: 50px;
-  padding: .2em;
+  padding: .201em;
   background-image: linear-gradient(#5f5e60, #3C3D3F);
   position: relative;
   will-change: box-shadow;
@@ -445,6 +446,7 @@ a {
   outline: 0;
   vertical-align: middle;
   user-select: none;
+  margin: 1.2px;
 }
 .icon.circle::before {
   content: '';
@@ -459,7 +461,7 @@ a {
 }
 .icon.x {
   border-radius: 50px;
-  padding: .2em;
+  padding: .201em;
   background-image: linear-gradient(#5f5e60, #3C3D3F);
   position: relative;
   will-change: box-shadow;
@@ -467,6 +469,7 @@ a {
   outline: 0;
   vertical-align: middle;
   user-select: none;
+  margin: 1.207387px;
 }
 .icon.x::before {
   content: '';
@@ -490,7 +493,7 @@ a {
 }
 .icon.triangle {
   border-radius: 50px;
-  padding: .2em;
+  padding: .201em;
   background-image: linear-gradient(#5f5e60, #3C3D3F);
   position: relative;
   will-change: box-shadow;
@@ -498,6 +501,7 @@ a {
   outline: 0;
   vertical-align: middle;
   user-select: none;
+  margin: 1.1px;
 }
 .icon.triangle::before {
   content: '';
@@ -528,21 +532,36 @@ a {
   border-left-width: 12px;
   border-bottom: 19px solid #47484A;
 }
-.icon.l3, .icon.r3 {
+.icon.l2, .icon.r2 {
   font-family: 'RationalTWDisplay';
   font-style: normal;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: .2em;
   background-image: linear-gradient(#5f5e60, #3C3D3F);
   position: relative;
   will-change: box-shadow;
   box-shadow: 0px 2px 5px black;
-  height: 50px;
-  width: 50px;
-  margin: 6px 0 0 6px;
-  outline: 0;
+  border-radius: 5px 5px 50% 50%;
+  height: 25px;
+  width: 40px;
   vertical-align: middle;
   user-select: none;
+}
+.icon.l2::after {
+  font-size: .5em;
+  content: 'L2';
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  padding: .8em 0 0 .5em;
+}
+.icon.r2::after {
+  font-size: .5em;
+  content: 'R2';
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  padding: .8em 0 0 .5em;
 }
 .icon.l1, .icon.r1 {
   font-family: 'RationalTWDisplay';
@@ -559,30 +578,36 @@ a {
   user-select: none;
 }
 .icon.l1::after {
-  font-size: .45em;
+  font-size: .5em;
   content: 'L1';
   position: absolute;
-  border-radius: 50px;
   top: 0px;
-  bottom: 0px;
-  left: 7px;
+  left: 5px;
   padding: .5em 0 0 .5em;
-  right: 0px;
-  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
-  clear: both;
 }
 .icon.r1::after {
-  font-size: .45em;
+  font-size: .5em;
   content: 'R1';
   position: absolute;
-  border-radius: 50px;
   top: 0px;
-  bottom: 0px;
-  left: 7px;
+  left: 5px;
   padding: .5em 0 0 .5em;
-  right: 0px;
-  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
-  clear: both;
+}
+.icon.l3, .icon.r3 {
+  font-family: 'RationalTWDisplay';
+  font-style: normal;
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  height: 54px;
+  width: 54px;
+  margin: 7px 0 7px 0;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
 }
 .icon.l3::before, .icon.r3::before {
   content: '';
@@ -593,35 +618,30 @@ a {
   bottom: 4px;
   left: 4px;
   right: 4px;
-  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
 }
 .icon.l3::after {
-  font-size: .45em;
+  font-size: .5em;
   content: 'L3';
   position: absolute;
-  border-left: 4.5px solid #fefefe;
+  border-left: 4px solid #fefefe;
   border-radius: 50px;
-  top: 7px;
-  bottom: 7px;
+  top: 8px;
+  bottom: 8px;
   left: 7px;
-  padding: .9em 0 0 .6em;
   right: 0px;
-  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
-  clear: both;
+  padding: 1em 0 0 .6em;
 }
 .icon.r3::after {
-  font-size: .45em;
+  font-size: .5em;
   content: 'R3';
   position: absolute;
-  border-left: 4.5px solid #fefefe;
+  border-left: 4px solid #fefefe;
   border-radius: 50px;
-  top: 7px;
-  bottom: 7px;
+  top: 8px;
+  bottom: 8px;
   left: 7px;
-  padding: .9em 0 0 .6em;
   right: 0px;
-  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
-  clear: both;
+  padding: 1em 0 0 .6em;
 }
 .radio {
   z-index: 5;
