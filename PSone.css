@@ -528,22 +528,6 @@ a {
   border-left-width: 12px;
   border-bottom: 19px solid #47484A;
 }
-.icon.l3, .icon.r3 {
-  font-family: 'RationalTWDisplay';
-  font-style: normal;
-  border-radius: 50px;
-  padding: .2em;
-  background-image: linear-gradient(#5f5e60, #3C3D3F);
-  position: relative;
-  will-change: box-shadow;
-  box-shadow: 0px 2px 5px black;
-  height: 50px;
-  width: 50px;
-  margin: 6px 0 0 6px;
-  outline: 0;
-  vertical-align: middle;
-  user-select: none;
-}
 .icon.l2, .icon.r2 {
   font-family: 'RationalTWDisplay';
   font-style: normal;
@@ -605,6 +589,22 @@ a {
   left: 5px;
   padding: .5em 0 0 .5em;
 }
+.icon.l3, .icon.r3 {
+  font-family: 'RationalTWDisplay';
+  font-style: normal;
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  height: 54px;
+  width: 54px;
+  margin: 7px;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
 .icon.l3::before, .icon.r3::before {
   content: '';
   position: absolute;
@@ -625,7 +625,7 @@ a {
   bottom: 8px;
   left: 7px;
   right: 0px;
-  padding: .9em 0 0 .5em;
+  padding: 1em 0 0 .6em;
 }
 .icon.r3::after {
   font-size: .5em;
@@ -637,7 +637,7 @@ a {
   bottom: 8px;
   left: 7px;
   right: 0px;
-  padding: .9em 0 0 .5em;
+  padding: 1em 0 0 .6em;
 }
 .radio {
   z-index: 5;
