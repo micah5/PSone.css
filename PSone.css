@@ -623,6 +623,35 @@ a {
   transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   clear: both;
 }
+.icon.psone {
+  font-family: 'RationalTWDisplay';
+  font-style: normal;
+  border-radius: 50px;
+  padding: .2em;
+  background-image: linear-gradient(#5f5e60, #3C3D3F);
+  position: relative;
+  will-change: box-shadow;
+  box-shadow: 0px 2px 5px black;
+  height: 32.1px;
+  width: 32.1px;
+  margin: 7px 0 7px 0;
+  outline: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.icon.psone::after {
+  font-size: .5em;
+  content: '';
+  background-image: url('psone.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 58%;
+  height: 100%;
+  top: 5px;
+  left: 4px;
+  padding: .9em 0 0 .6em;
+}
 .radio {
   z-index: 5;
 }
