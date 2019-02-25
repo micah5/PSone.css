@@ -61,7 +61,8 @@ body {
   background: -webkit-linear-gradient(left, transparent, #AEAFAE, transparent);
   border: 0px;
   border-bottom: 3px solid;
-  border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+  -o-border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
+     border-image: linear-gradient(to right, transparent , rgba(255, 255, 255, 0.2), transparent);
   border-image-slice: 1;
   border-top: 3px solid;
 }
@@ -93,11 +94,13 @@ body {
   background: -webkit-linear-gradient(left, transparent, #49a7c6, transparent);
 }
 .btn.alternative {
-  border-image: linear-gradient(to right, transparent , #E84437, #F4F251, transparent);
+  -o-border-image: linear-gradient(to right, transparent , #E84437, #F4F251, transparent);
+     border-image: linear-gradient(to right, transparent , #E84437, #F4F251, transparent);
   background: -webkit-linear-gradient(left, transparent, #79F372, transparent);
 }
 .btn.alternative:hover {
-  border-image: linear-gradient(to right, transparent , #6CB064, #DC4387, transparent);
+  -o-border-image: linear-gradient(to right, transparent , #6CB064, #DC4387, transparent);
+     border-image: linear-gradient(to right, transparent , #6CB064, #DC4387, transparent);
   background: -webkit-linear-gradient(left, transparent, #77F9FB, transparent);
 }
 .container:not(:last-child) {
@@ -131,6 +134,12 @@ body {
   background: linear-gradient(to right, white 0%, white 50%, transparent 50%, transparent 100%) repeat-x left bottom;
   background-size: 30px 2px;
   color: white;
+}
+:-ms-input-placeholder {
+  color: #C6C843;
+}
+::-ms-input-placeholder {
+  color: #C6C843;
 }
 ::placeholder {
   color: #C6C843;
@@ -292,7 +301,10 @@ a {
   position: relative;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 42px;
   height: 26px;
   width: 0;
@@ -318,7 +330,10 @@ a {
   position: relative;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 42px;
   height: 26px;
   box-shadow: 0px 2px 5px black;
@@ -336,7 +351,10 @@ a {
   position: relative;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 28.1px;
   box-shadow: 0px 2px 5px black;
 }
@@ -423,7 +441,10 @@ a {
   box-shadow: 0px 2px 5px black;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin: 1.1px;
 }
 .icon.square::before {
@@ -445,7 +466,10 @@ a {
   box-shadow: 0px 2px 5px black;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin: 1.2px;
 }
 .icon.circle::before {
@@ -468,7 +492,10 @@ a {
   box-shadow: 0px 2px 5px black;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin: 1.207387px;
 }
 .icon.x::before {
@@ -500,7 +527,10 @@ a {
   box-shadow: 0px 2px 5px black;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin: 1.1px;
 }
 .icon.triangle::before {
@@ -545,7 +575,10 @@ a {
   height: 25px;
   width: 40px;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .icon.l2::after {
   font-size: .5em;
@@ -575,7 +608,10 @@ a {
   height: 20px;
   width: 40px;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .icon.l1::after {
   font-size: .5em;
@@ -607,7 +643,10 @@ a {
   margin: 7px 0 7px 0;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .icon.l3::before, .icon.r3::before {
   content: '';
@@ -657,7 +696,10 @@ a {
   margin: 7px 0 7px 0;
   outline: 0;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .icon.psone::after {
   font-size: .5em;
@@ -710,3 +752,4 @@ a {
   transform: translate(-20px, 25px);
   visibility:hidden
 }
+/*# sourceMappingURL=PSone.css.map */

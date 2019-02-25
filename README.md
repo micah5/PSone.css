@@ -90,3 +90,27 @@ From FF7
   <input type="text" class="input" placeholder="Jill Valentine">
 </div>
 ```
+
+## Development
+
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/micah5/PSone.css/issues)
+
+Fork the project and enter this commands in your terminal
+
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/PSone.css.git
+cd PSone.css
+npm install
+```
+
+### Storybook
+For visual testing, this project contains storybook which you can run by doing the next command
+```sh
+$ npm run storybook
+```
+
+### Demo
+The demo page is located in `index.html`. If you want to change something there, you can use the next command
+```sh
+$ npm run dev
+```

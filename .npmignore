@@ -1,0 +1,13 @@
+# User & editor settings
+.editorconfig
+.vscode
+
+# Build files
+.storybook
+node_modules
+story
+
+# Documentation files
+favicon.ico
+index.html
+storybook-static

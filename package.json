@@ -1,0 +1,40 @@
+{
+  "name": "PSone.css",
+  "version": "1.0.0",
+  "description": "Playstation 1 style CSS Framework, inspired by NES.css",
+  "main": "index.html",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "dev": "yarn poi index.html --serve ",
+    "build:main": "npm run build:autoprefix && npm run build:cleancss",
+    "build:autoprefix": "postcss --use autoprefixer --map false --output PSone.css PSone.css",
+    "build:cleancss": "cleancss -o PSone.min.css PSone.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micah5/PSone.css.git"
+  },
+  "keywords": [
+    "css",
+    "psone",
+    "css-framework"
+  ],
+  "author": "micah5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micah5/PSone.css/issues"
+  },
+  "homepage": "https://github.com/micah5/PSone.css#readme",
+  "browserslist": [
+    "> 1%"
+  ],
+  "devDependencies": {
+    "@storybook/addon-backgrounds": "^4.1.13",
+    "@storybook/addon-knobs": "^4.1.13",
+    "@storybook/html": "^4.1.13",
+    "autoprefixer": "^9.4.8",
+    "clean-css-cli": "^4.2.1",
+    "poi": "^12.5.5",
+    "postcss-cli": "^6.1.2"
+  }
+}
