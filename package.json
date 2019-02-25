@@ -2,7 +2,7 @@
   "name": "PSone.css",
   "version": "1.0.0",
   "description": "Playstation 1 style CSS Framework, inspired by NES.css",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "dev": "yarn poi index.html --serve ",
