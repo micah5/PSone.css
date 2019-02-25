@@ -1,6 +1,10 @@
 import { storiesOf } from '@storybook/html';
+import {
+  withKnobs, boolean,
+} from '@storybook/addon-knobs';
 
 const stories = storiesOf('Inputs', module);
+stories.addDecorator(withKnobs);
 
 stories.add('radio', () => `<div class="radio">
   <label>
@@ -15,4 +19,12 @@ stories.add('radio', () => `<div class="radio">
       <span class="click"></span>
     </span>
   </label>
-</div>`);
+</div>`)
+  .add('text', () => {
+    const placeholder = boolean('placeholder', false) ? 'placeholder' : '';
+
+    return `<div class="field ${placeholder ? 'is-inline' : ''}">
+      <label>${placeholder ? 'With placeholder' : 'Default'}</label>
+      <input type="text" class="input" ${placeholder ? 'placeholder="Jill Valentine"' : ''}>
+    </div>`
+  });

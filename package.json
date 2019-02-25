@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
+    "dev": "yarn poi index.html --serve ",
     "build:main": "npm run build:autoprefix && npm run build:cleancss",
     "build:autoprefix": "postcss --use autoprefixer --map false --output PSone.css PSone.css",
     "build:cleancss": "cleancss -o PSone.min.css PSone.css"

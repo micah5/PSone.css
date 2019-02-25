@@ -6,7 +6,6 @@ import {
 const stories = storiesOf('Progress', module);
 stories.addDecorator(withKnobs);
 
-// prettier-ignore
 stories.add('progress', () => {
   const percentage = number('percentage', 30, {
     range: true,
