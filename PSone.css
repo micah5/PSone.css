@@ -103,6 +103,12 @@ body {
      border-image: linear-gradient(to right, transparent , #6CB064, #DC4387, transparent);
   background: -webkit-linear-gradient(left, transparent, #77F9FB, transparent);
 }
+button:disabled,
+button[disabled]{
+    color:  #AEAFAE;
+    pointer-events:none;
+  
+}
 .container:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -143,6 +149,24 @@ body {
 }
 ::placeholder {
   color: #C6C843;
+}
+input:disabled,
+input[disabled]{
+   
+    pointer-events:none;
+  
+}
+input:disabled::-webkit-input-placeholder { 
+     color:  #AEAFAE;
+}
+input:disabled:-moz-placeholder { 
+    color:  #AEAFAE;
+}
+input:disabled::-moz-placeholder { 
+     color:  #AEAFAE;
+}
+input:disabled:-ms-input-placeholder {
+    color:  #AEAFAE;
 }
 .container.dark {
   background-image: none;
