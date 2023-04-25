@@ -34,7 +34,7 @@
     "@storybook/html": "^6.5.15",
     "autoprefixer": "^9.4.8",
     "clean-css-cli": "^4.2.1",
-    "poi": "^12.5.5",
+    "poi": "^12.10.3",
     "postcss-cli": "^6.1.2"
   }
 }
