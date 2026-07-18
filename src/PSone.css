@@ -142,7 +142,10 @@ button[disabled]{
   background-size: 30px 2px;
   color: white;
 }
-::-moz-placeholder {
+:-ms-input-placeholder {
+  color: #C6C843;
+}
+::-ms-input-placeholder {
   color: #C6C843;
 }
 ::placeholder {
@@ -325,6 +328,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   width: 42px;
   height: 26px;
@@ -353,6 +357,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   width: 42px;
   height: 26px;
@@ -373,6 +378,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   width: 28.1px;
   box-shadow: 0px 2px 5px black;
@@ -462,6 +468,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   margin: 1.1px;
 }
@@ -486,6 +493,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   margin: 1.2px;
 }
@@ -511,6 +519,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   margin: 1.207387px;
 }
@@ -545,6 +554,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   margin: 1.1px;
 }
@@ -592,6 +602,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .icon.l2::after {
@@ -624,6 +635,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .icon.l1::after {
@@ -658,6 +670,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .icon.l3::before, .icon.r3::before {
@@ -710,6 +723,7 @@ a {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .icon.psone::after {
@@ -763,3 +777,4 @@ a {
   transform: translate(-20px, 25px);
   visibility:hidden
 }
+/*# sourceMappingURL=PSone.css.map */

@@ -1,14 +1,13 @@
 {
-  "name": "PSone.css",
+  "name": "psone.css",
   "version": "1.0.0",
-  "description": "Playstation 1 style CSS Framework, inspired by NES.css",
-  "main": "index.html",
+  "description": "PlayStation 1-style CSS framework, inspired by NES.css",
+  "style": "dist/PSone.css",
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "dev": "yarn poi index.html --serve ",
-    "build:main": "npm run build:autoprefix && npm run build:cleancss",
-    "build:autoprefix": "postcss --use autoprefixer --map false --output PSone.css PSone.css",
-    "build:cleancss": "cleancss -o PSone.min.css PSone.css"
+    "build": "node scripts/build.mjs",
+    "build:main": "npm run build",
+    "dev": "node scripts/serve.mjs",
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,17 +23,26 @@
   "bugs": {
     "url": "https://github.com/micah5/PSone.css/issues"
   },
-  "homepage": "https://github.com/micah5/PSone.css#readme",
+  "homepage": "https://micah5.github.io/PSone.css/",
+  "files": [
+    "dist",
+    "fonts",
+    "LICENSE",
+    "PSone.css",
+    "PSone.min.css",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.22.0 || >=24.11.0"
+  },
   "browserslist": [
-    "> 1%"
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
   ],
   "devDependencies": {
-    "@storybook/addon-backgrounds": "^4.1.13",
-    "@storybook/addon-knobs": "^4.1.13",
-    "@storybook/html": "^6.5.15",
-    "autoprefixer": "^9.4.8",
-    "clean-css-cli": "^4.2.1",
-    "poi": "^12.5.5",
-    "postcss-cli": "^6.1.2"
+    "autoprefixer": "^10.5.4",
+    "cssnano": "^8.0.2",
+    "postcss": "^8.5.19"
   }
 }
