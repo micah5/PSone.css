@@ -43,6 +43,6 @@
   "devDependencies": {
     "autoprefixer": "^10.5.4",
     "cssnano": "^8.0.2",
-    "postcss": "^8.5.19"
+    "postcss": "^8.5.26"
   }
 }
